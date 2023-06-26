@@ -3,9 +3,9 @@ import { buildSubgraphSchema } from '@apollo/subgraph';
 import GraphQLUpload, {
   type FileUpload,
   // eslint-disable-next-line import/extensions
-} from 'graphql-upload/GraphQLUpload.js';
+} from 'graphql-upload/GraphQLUpload.mjs';
 // eslint-disable-next-line import/extensions
-import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.js';
+import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
 import { GraphQLResolverMap } from 'apollo-graphql';
 import {
   ApolloServerPluginInlineTraceDisabled,

@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "es2020",
     "moduleResolution": "node",
-    "module": "nodenext",
-    "lib": ["es2017", "es7", "es6"],
+    "module": "esnext",
+    "lib": ["es2022", "DOM"],
     "allowJs": true,
     "strict": true,
     "isolatedModules": true,
