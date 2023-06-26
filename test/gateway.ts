@@ -1,8 +1,5 @@
 import { ApolloServer } from 'apollo-server-express';
-import {
-  ApolloGateway,
-  IntrospectAndCompose,
-} from '@apollo/gateway';
+import { ApolloGateway, IntrospectAndCompose } from '@apollo/gateway';
 import {
   ApolloServerPluginInlineTraceDisabled,
   ApolloServerPluginLandingPageDisabled,
@@ -10,7 +7,7 @@ import {
 import express from 'express';
 
 // eslint-disable-next-line import/extensions
-import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.js';
+import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
 import http from 'http';
 import type { AddressInfo } from 'net';
 

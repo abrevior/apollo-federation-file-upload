@@ -3,9 +3,9 @@ import {
   RemoteGraphQLDataSource,
 } from '@apollo/gateway';
 // eslint-disable-next-line import/extensions
-import Upload from 'graphql-upload/Upload.js';
+import Upload from 'graphql-upload/Upload.mjs';
 // eslint-disable-next-line import/extensions
-import type { FileUpload } from 'graphql-upload/GraphQLUpload.js';
+import type { FileUpload } from 'graphql-upload/GraphQLUpload.mjs';
 import { isObject } from '@apollo/gateway/dist/utilities/predicates';
 import cloneDeep from 'lodash.clonedeep';
 import set from 'lodash.set';

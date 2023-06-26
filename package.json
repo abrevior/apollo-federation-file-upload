@@ -3,6 +3,7 @@
   "version": "4.1.0",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
+  "type": "module",
   "author": "Guilherme Iscaro (iscaro@profusion.mobi)",
   "repository": "https://github.com/profusion/apollo-federation-file-upload",
   "license": "MIT",
@@ -22,11 +23,12 @@
     "lint": "run-s check-types run-lint",
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "test": "nyc ts-node ./test/index.ts"
+    "test": "NODE_OPTIONS=\"--experimental-specifier-resolution=node --loader ts-node/esm\" c8 --config ./.nycrc ts-node  ./test/index.ts"
   },
   "dependencies": {
+    "c8": "^8.0.0",
     "form-data": "^4.0.0",
-    "graphql-upload": "^15.0.1",
+    "graphql-upload": "^16.0.2",
     "lodash.clonedeep": "^4.5.0",
     "lodash.set": "^4.3.2"
   },
