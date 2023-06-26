@@ -36,8 +36,8 @@
     "@apollo/gateway": "^2.0.4"
   },
   "devDependencies": {
-    "@apollo/gateway": "^2.0.4",
-    "@apollo/subgraph": "^2.0.4",
+    "@apollo/gateway": "^2.4.8",
+    "@apollo/subgraph": "^2.4.8",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-angular": "^17.6.6",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
